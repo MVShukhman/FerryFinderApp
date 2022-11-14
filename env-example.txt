@@ -1,0 +1,41 @@
+DOMAIN=localhost
+
+STACK_NAME=scandic-ferry-finder-com
+
+TRAEFIK_PUBLIC_NETWORK=traefik-public
+TRAEFIK_TAG=scandic-ferry-finder.com
+TRAEFIK_PUBLIC_TAG=traefik-public
+
+DOCKER_IMAGE_BACKEND=backend
+DOCKER_IMAGE_FRONTEND=frontend
+
+# Backend
+BACKEND_CORS_ORIGINS=["http://localhost", "http://localhost:4200", "http://localhost:3000", "http://localhost:8080", "https://localhost", "https://localhost:4200", "https://localhost:3000", "https://localhost:8080", "http://dev.scandic-ferry-finder.com", "https://stag.scandic-ferry-finder.com", "https://scandic-ferry-finder.com", "http://local.dockertoolbox.tiangolo.com", "http://localhost.tiangolo.com"]
+PROJECT_NAME=
+SECRET_KEY=
+FIRST_SUPERUSER=
+FIRST_SUPERUSER_PASSWORD=
+SMTP_TLS=True
+SMTP_PORT=587
+SMTP_HOST=
+SMTP_USER=
+SMTP_PASSWORD=
+EMAILS_FROM_EMAIL=info@scandic-ferry-finder.com
+
+USERS_OPEN_REGISTRATION=False
+
+SENTRY_DSN=
+
+# Flower
+FLOWER_BASIC_AUTH=admin:password
+
+# Postgres
+POSTGRES_SERVER=db
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=
+POSTGRES_DB=app
+
+# PgAdmin
+PGADMIN_LISTEN_PORT=5050
+PGADMIN_DEFAULT_EMAIL=admin@mail.ru
+PGADMIN_DEFAULT_PASSWORD=password

@@ -1,0 +1,8 @@
+__pycache__
+app.egg-info
+.mypy_cache
+.coverage
+.env
+*_revision.py
+htmlcov
+/backend/.idea/
